@@ -165,6 +165,13 @@ schema:Organization
     schema:name "Organization" ;
 .
 
+schema:OrganizationRole
+  a rdfs:Class ;
+  schema:name "Organization Role" ;
+  schema:description "A subclass of Role used to describe roles within organizations." ;
+  rdfs:subClassOf schema:Role
+.
+
 schema:Person
     schema:description "A person (alive, dead, undead, or fictional)" ;
     schema:name "Person" ;
