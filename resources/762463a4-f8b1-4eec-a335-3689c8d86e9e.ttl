@@ -33,9 +33,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcat:qualifiedRelation [
     a dcat:Relationship ;
         dcat:hadRole aarr:memberOf ;
-        schema:agent <https://linked.data.gov.au/org/um>
+        schema:agent <https://linked.data.gov.au/org/uom>
     ] ;
-    schema:memberOf <https://linked.data.gov.au/org/um> ;
+    schema:memberOf <https://linked.data.gov.au/org/uom> ;
     schema:name "Marcia Langton" ;
     schema:email "m.langton@unimelb.edu.au"^^xsd:anyURI
 .

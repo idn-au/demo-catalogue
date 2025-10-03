@@ -1,11 +1,11 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
-@prefix dcterms:<http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix drole:  <https://linked.data.gov.au/def/data-roles/> .
-@prefix fabio <http://purl.org/spar/fabio/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix id:     <http://id.loc.gov/vocabulary/identifiers/> .
 @prefix orgrol: <https://data.idnau.org/pid/orgRole/> .
 @prefix prov:   <http://www.w3.org/ns/prov#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema: <https://schema.org/> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 
@@ -26,19 +26,19 @@
 
 # Proposed new IRI pattern "/pid/orgRole/" (see prefixes). The schema:roleName won't be unique (names never are) - to help avoid collisions, schema:description can optionally elaborate on role context (such as "Research"). In practice, description fields are used this way in any case.
 
-  orgrol:bc9c0054-7929-4b61-9c72-b4b9613b7ede
+orgrol:bc9c0054-7929-4b61-9c72-b4b9613b7ede
   a schema:OrganizationRole, prov:Agent ;
   schema:roleName "Associate Dean (Arts)"@en ;
-  schema:description "Associate Dean (Arts) – Research"@en ;
-  schema:memberOf <https://linked.data.gov.au/org/um> .
+  schema:description "Associate Dean (Arts) - Research"@en ;
+  schema:memberOf <https://linked.data.gov.au/org/uom> .
 
-  <https://linked.data.gov.au/org/um>
+<https://linked.data.gov.au/org/uom>
   a schema:Organization ;
   schema:name "The University of Melbourne"@en .
 
 # Below a new Semantic background entry for fetchable labels. the rdfs:comment here is verbatim from schema.org. We could elaborate on this to explain the usage for 'title', 'post' etc if needed. Should we keep the original schema.org comment and add a second comment or similar property for that?
 
-  schema:OrganizationRole
+schema:OrganizationRole
   a rdfs:Class ;
   rdfs:label "Organization Role"@en ;
   rdfs:comment "A subclass of Role used to describe roles within organizations."@en ;

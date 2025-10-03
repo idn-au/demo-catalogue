@@ -22,10 +22,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:description "The Indigenous singer a proud Gamilaraay and Birri Gubba man, delivers a rendition of John Farnham’s classic at the NITV sunrise ceremony as part of 26 January Survival Day, Invasion Day and Australia Day events"; 
     schema:keywords "Empowerment, Social change, Social justice, Civil rights" ;
     dcat:theme <https://linked.data.gov.au/def/policy/2a8a5ffc-04f1-4dd6-9ffa-71fd82333c7f> ;
-    schema:created "2020"^^xsd:gYear ;
+    schema:dateCreated "2020"^^xsd:gYear ;
     dcterms:creator <https://dbpedia.org/page/Mitch_Tambo> ;
     dcterms:publisher <https://www.sbs.com.au> ;
-    dcterms:language austlang::D23
+    dcterms:language austlang:D23
 .
 
 <https://dbpedia.org/page/Mitch_Tambo>

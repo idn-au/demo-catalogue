@@ -1,0 +1,79 @@
+PREFIX schema: <https://schema.org/>
+
+<https://linked.data.gov.au/org/uom>
+    schema:name "The University of Melbourne" .
+
+<https://linked.data.gov.au/org/anu>
+    schema:name "Australian National University" .
+
+<https://vocabularyserver.com/apais/xml.php?skosTema=13>
+    schema:description "Aboriginal history"@en;
+    schema:name "Aboriginal history"@en .
+
+<https://vocabularyserver.com/apais/xml.php?skosTema=1251>
+    schema:description "Law";
+    schema:name "Law" .
+
+<https://vocabularyserver.com/apais/xml.php?skosTema=1246>
+    schema:description "Languages";
+    schema:name "Languages" .
+
+<https://terms.codata.org/rdmt/indigenous-data>
+    schema:description "Data that pertains to (is created or gathered by, or is about) Indigenous peoples."@en;
+    schema:name "Indigenous data"@en .
+
+<https://data.idnau.org/pid/vocab/persons-indigenous-status/nonIndigenous>
+    schema:description "The individual is not an Indigenous individual";
+    schema:name "Non-Indigenous"@en .
+
+<https://data.idnau.org/pid/vocab/persons-indigenous-status/indigenousStatusUnknown>
+    schema:description "The individual's Indigenous status is unknown";
+    schema:name "Indigenous status Unknown"@en .
+
+<https://data.idnau.org/pid/vocab/persons-indigenous-status/indigenous>
+    schema:description "The individual is an Indigenous individual";
+    schema:name "Indigenous"@en .
+
+<https://data.idnau.org/pid/vocab/org-indigeneity/run-by-indigenous-persons>
+    schema:description "The organisation is run (managed) by indigenous people";
+    schema:name "Run By Indigenous Persons"@en .
+
+<https://data.idnau.org/pid/vocab/org-indigeneity/non-indigenous>
+    schema:description "The organisation is not an indigenous organisation";
+    schema:name "Non-Indigenous"@en .
+
+<https://data.idnau.org/pid/vocab/org-indigeneity/indigenous-persons-organisation>
+    schema:description "The organisation comprises of indigenous persons";
+    schema:name "Indigenous Persons Organisation"@en .
+
+<https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things>
+    schema:description "Data that is about indigenous things; land, resources, knowledge etc.";
+    schema:name "About Indigenous Things"@en .
+
+<https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people>
+    schema:description "Data that is about indigenous people";
+    schema:name "About Indigenous People"@en .
+
+<https://data.idnau.org/pid/vocab/idn-th/indigenous-demographics>
+    schema:description "Demographics of indigenous peoples";
+    schema:name "Indigenous demographics"@en .
+
+<https://data.idnau.org/pid/vocab/aarr/memberOf> schema:description "The same as Member but for inverse agent relations"@en;
+    schema:name "Member Of"@en .
+
+<https://data.idnau.org/pid/vocab/aarr/affiliateOf> schema:description "The same as Affiliate but for inverse agent relations"@en;
+    schema:name "Affiliate Of"@en .
+
+<https://data.idnau.org/pid/austlang/N141> schema:description "Gumatj language N141"@en;
+    schema:name "Gumatj"@aus .
+
+<https://data.idnau.org/pid/austlang/D23> schema:description "Gamilaraay / Gamilaroi / Kamilaroi language D23"@en;
+    schema:name "Gamilaraay / Gamilaroi / Kamilaroi"@aus .
+
+<http://id.loc.gov/vocabulary/iso639-2/eng> schema:name "English"@en .
+
+<http://id.loc.gov/vocabulary/marcgt/boo> "Resource comprising a collection of leaves of paper, parchment, wood, stiffened textile, ivory, metal tablets, or other flat materials, that are blank, written on, or printed, and are strung or bound together in a volume. Includes e-books or electronic resources structured like a book."@en ;
+    schema:name "book" .
+
+<http://viaf.org/viaf/3517148390832810830006> schema:description "Australian aboriginal leader" ;
+    schema:name "RaymattjaMarika-Munungirritj"@en-AU .

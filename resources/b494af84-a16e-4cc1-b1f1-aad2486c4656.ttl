@@ -54,7 +54,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 drole:principalInvestigator
   a skos:Concept, prov:Role ;
   skos:prefLabel "Principal investigator"@en ;
-  skos:inScheme <https://linked.data.gov.au/def/data-roles/> 
+  skos:inScheme <https://linked.data.gov.au/def/data-roles> 
 .
 
 <https://linked.data.gov.au/org/uts>

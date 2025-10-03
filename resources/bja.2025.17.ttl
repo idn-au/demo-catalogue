@@ -32,7 +32,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         dcat:qualifiedRelation [
         a dcat:Relationship ;
             dcat:hadRole aarr:memberOf ;
-            schema:agent <https://linked.data.gov.au/org/um>
+            schema:agent <https://linked.data.gov.au/org/uom>
         ] 
 .
 
@@ -40,5 +40,5 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a schema:Organization ;
     schema:name "Cambridge University Press" ;
     schema:url "http://www.cambridge.org/"^^xsd:anyURI ;
-    schema:identifiers "https://ror.org/03jsdjx34"^^id:ror
+    schema:identifier "https://ror.org/03jsdjx34"^^id:ror
 .

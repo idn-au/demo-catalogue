@@ -2,8 +2,16 @@ PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX prof: <http://www.w3.org/ns/dx/prof/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+schema:OrganizationRole
+    a rdfs:Class ;
+    rdfs:subClassOf schema:Role ;
+    schema:description "A subclass of Role used to describe roles within organizations." ;
+    schema:name "Organization Role" ;
+.
 
 dcterms:bibliographicCitation
     schema:description "A bibliographic reference for the resource."@en ;
@@ -38,6 +46,21 @@ dcterms:rights
 dcterms:type
     schema:description "The nature or genre of the resource."@en ;
     schema:name "Type"@en ;
+.
+
+<http://purl.org/spar/fabio/PolicyDocument>
+    schema:description "A document embodying a policy that descibes and defines how something should be done. "@en ;
+    schema:name "policy document"@en ;
+.
+
+rdfs:comment
+    schema:description "A description of the subject resource." ;
+    schema:name "comment" ;
+.
+
+rdfs:subClassOf
+    schema:description "The subject is a subclass of a class." ;
+    schema:name "subclass of" ;
 .
 
 skos:Concept
@@ -94,6 +117,10 @@ prof:hasRole
     schema:name "has role" ;
 .
 
+prov:Agent
+    schema:name "Agent" ;
+.
+
 prov:Attribution
     schema:description "An instance of prov:Attribution provides additional descriptions about the binary prov:wasAttributedTo relation from an prov:Entity to some prov:Agent that had some responsible for it. For example, :cake prov:wasAttributedTo :baker; prov:qualifiedAttribution [ a prov:Attribution; prov:entity :baker; :foo :bar ]."@en ;
     schema:name "Attribution" ;
@@ -115,6 +142,11 @@ prov:agent
 prov:qualifiedAttribution
     schema:description "If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ]."@en ;
     schema:name "qualified attribution" ;
+.
+
+<https://linked.data.gov.au/def/data-roles/custodian>
+    schema:description "party that accepts accountability and responsibility for the resource and ensures appropriate care and maintenance of the resource" ;
+    schema:name "custodian"@en ;
 .
 
 <https://linked.data.gov.au/def/reg-statuses/experimental>
@@ -163,13 +195,6 @@ schema:DataCatalog
 schema:Organization
     schema:description "An organization such as a school, NGO, corporation, club, etc" ;
     schema:name "Organization" ;
-.
-
-schema:OrganizationRole
-  a rdfs:Class ;
-  schema:name "Organization Role" ;
-  schema:description "A subclass of Role used to describe roles within organizations." ;
-  rdfs:subClassOf schema:Role
 .
 
 schema:Person
@@ -273,6 +298,11 @@ schema:publisher
     schema:name "publisher" ;
 .
 
+schema:roleName
+    schema:description "A role played, performed or filled by a person or organization. For example, the team of creators for a comic book might fill the roles named 'inker', 'penciller', and 'letterer'; or an athlete in a SportsTeam might play in the position named 'Quarterback'" ;
+    schema:name "role name" ;
+.
+
 schema:status
     schema:description "The status of the study (enumerated)" ;
     schema:name "status" ;
@@ -283,3 +313,19 @@ schema:url
     schema:name "url" ;
 .
 
+rdfs:Class
+    schema:description "The class of classes." ;
+    schema:name "Class" ;
+.
+
+prov:hadRole
+    schema:description
+        "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\"#owl-profile\">PROV-O OWL Profile</a>." ,
+        "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]."@en ;
+    schema:name "had role" ;
+.
+
+schema:Role
+    schema:description "Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a particular time period. Or that a Person's 'actor' role in a Movie was for some particular characterName. Such properties can be attached to a Role entity, which is then associated with the main entities using ordinary properties like 'member' or 'actor'.\\n\\nSee also [blog post](http://blog.schema.org/2014/06/introducing-role.html)" ;
+    schema:name "Role" ;
+.

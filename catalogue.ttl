@@ -17,7 +17,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <https://doi.org/10.1192/bja.2025.17> ,
         <https://doi.org/10.18584/iipj.2023.14.1.10987> ,
         <https://catalogue.nla.gov.au/catalog/2003311> ,
-        <https://www.youtube.com/watch?v=tEdweyPh-N8> ;
+        <https://www.youtube.com/watch?v=tEdweyPh-N8> ,
+        <https://data.idnau.org/pid/MPF1226> ;
     schema:name "IDN Demonstration Catalogue" ;
     schema:publisher <https://linked.data.gov.au/org/isu> ;
 .
