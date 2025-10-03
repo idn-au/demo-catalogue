@@ -72,7 +72,7 @@ PREFIX schema: <https://schema.org/>
 
 <http://id.loc.gov/vocabulary/iso639-2/eng> schema:name "English"@en .
 
-<http://id.loc.gov/vocabulary/marcgt/boo> "Resource comprising a collection of leaves of paper, parchment, wood, stiffened textile, ivory, metal tablets, or other flat materials, that are blank, written on, or printed, and are strung or bound together in a volume. Includes e-books or electronic resources structured like a book."@en ;
+<http://id.loc.gov/vocabulary/marcgt/boo> schema:description "Resource comprising a collection of leaves of paper, parchment, wood, stiffened textile, ivory, metal tablets, or other flat materials, that are blank, written on, or printed, and are strung or bound together in a volume. Includes e-books or electronic resources structured like a book."@en ;
     schema:name "book" .
 
 <http://viaf.org/viaf/3517148390832810830006> schema:description "Australian aboriginal leader" ;
