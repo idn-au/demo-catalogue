@@ -1,0 +1,23 @@
+# this Dataset has two IRIs for dcterms:spatial and can be used to test downstream impacts for rendering spatial features. ref: https://github.com/idn-au/idn-catalogue-profile/issues/22
+
+@prefix dcat:     <http://www.w3.org/ns/dcat#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix schema:   <https://schema.org/> .
+@prefix geo:      <http://www.opengis.net/ont/geosparql#> .
+@prefix ex:       <https://example.org/catalog/> .
+@prefix gn:       <https://sws.geonames.org/> .
+
+ex:dataset-coastal-biodiversity
+    a dcat:Dataset ;
+    dcterms:title "Coastal biodiversity surveys of Port Phillip Bay and Western Port"@en ;
+    dcterms:description "Survey data collected from two distinct Victorian coastal regions between 2019 and 2022."@en ;
+    dcterms:spatial  gn:2158177/ ,  gn:2058695/ ;   # Port Phillip Bay & Western Port (example IRIs)
+    dcterms:creator  <https://ror.org/03yrm5c26> ; # University of Melbourne (example)
+    dcterms:publisher <https://ror.org/03yrm5c26> ;
+    dcterms:issued "2022-07-15"^^xsd:date ;
+    dcat:keyword "biodiversity", "coastal ecosystem", "Victoria" ;
+    dcat:theme <http://vocab.australia.gov.au/def/anzsrc-for/0602> ;
+    dcat:contactPoint [ a vcard:Individual ;
+        vcard:fn "Dr. J. Smith" ;
+        vcard:hasEmail <mailto:j.smith@example.org> ] ;
+    dcat:landingPage <https://example.org/data/coastal-biodiversity> .
