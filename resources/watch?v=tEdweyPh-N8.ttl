@@ -1,4 +1,4 @@
-# this VideoObject for testing CARE scoring is created by an Indigenous Person and performed in an Indigneous lanaguage and is NOT about Indigenous things or people, themes etc. The Publisher is a non-indigenous organization.
+# this VideoObject for testing CARE scoring is created by an Indigenous Person and performed in an Indigneous lanaguage and is NOT about Indigenous things or people, themes etc. The Publisher is a non-indigenous organization, and the Contributor is an Indigenous organisation.
 
 PREFIX aarr: <https://data.idnau.org/pid/vocab/aarr/>
 PREFIX austlang: <https://data.idnau.org/pid/austlang/>
@@ -9,6 +9,7 @@ PREFIX drole:  <https://linked.data.gov.au/def/data-roles/>
 PREFIX id: <http://id.loc.gov/vocabulary/identifiers/>
 PREFIX iso639_2: <http://id.loc.gov/vocabulary/iso639-2/>
 PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX nitv: <https://www.sbs.com.au/nitv>
 PREFIX orgrol: <https://data.idnau.org/pid/orgRole/>
 PREFIX orgind: <https://data.idnau.org/pid/vocab/org-indigeneity/>
 PREFIX pis: <https://data.idnau.org/pid/vocab/persons-indigenous-status/>
@@ -28,6 +29,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:creator dbpedia:Mitch_Tambo ;
     dcterms:publisher <https://www.sbs.com.au> ;
     dcterms:language austlang:D23 ;
+    dcterms:contributor nitv: ;
     prov:qualifiedAttribution [
         a prov:Attribution ;
         prov:agent dbpedia:Mitch_Tambo ;
@@ -47,4 +49,12 @@ sbs:
     schema:alternateName "Special Broadcasting Service" ;
     schema:url "https://www.sbs.com.au"^^xsd:anyURI ;
     dcterms:type orgind:non-indigenous
+.
+
+nitv:
+    a schema:Organization ;
+    schema:name "NITV" ;
+    schema:alternateName "National Indigenous Television" ;
+    schema:url "https://www.sbs.com.au/nitv"^^xsd:anyURI ;
+    dcterms:type orgind:indigenous
 .
