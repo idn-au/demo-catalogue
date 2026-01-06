@@ -2,16 +2,18 @@
 
 PREFIX aarr: <https://data.idnau.org/pid/vocab/aarr/>
 PREFIX austlang: <https://data.idnau.org/pid/austlang/>
+PREFIX dbpedia: <https://dbpedia.org/page/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX drole:  <https://linked.data.gov.au/def/data-roles/>
 PREFIX id: <http://id.loc.gov/vocabulary/identifiers/>
-PREFIX iso639-2: <http://id.loc.gov/vocabulary/iso639-2/>
+PREFIX iso639_2: <http://id.loc.gov/vocabulary/iso639-2/>
 PREFIX fabio: <http://purl.org/spar/fabio/>
 PREFIX orgrol: <https://data.idnau.org/pid/orgRole/>
 PREFIX orgind: <https://data.idnau.org/pid/vocab/org-indigeneity/>
 PREFIX pis: <https://data.idnau.org/pid/vocab/persons-indigenous-status/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX sbs: <https://www.sbs.com.au>
 PREFIX schema: <https://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -19,23 +21,27 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://www.youtube.com/watch?v=tEdweyPh-N8>
     a schema:VideoObject, schema:CreativeWork ;
     schema:name "Mitch Tambo performs John Farnham's You're the Voice in Gamilaraay language" ;
-    schema:description "The Indigenous singer a proud Gamilaraay and Birri Gubba man, delivers a rendition of John Farnham’s classic at the NITV sunrise ceremony as part of 26 January Survival Day, Invasion Day and Australia Day events"; 
+    schema:description "The Indigenous singer a proud Gamilaraay and Birri Gubba man, delivers a rendition of John Farnham’s classic at the NITV sunrise ceremony as part of 26 January Survival Day, Invasion Day and Australia Day events" ; 
     schema:keywords "Empowerment, Social change, Social justice, Civil rights" ;
     dcat:theme <https://linked.data.gov.au/def/policy/2a8a5ffc-04f1-4dd6-9ffa-71fd82333c7f> ;
     schema:dateCreated "2020"^^xsd:gYear ;
-    dcterms:creator <https://dbpedia.org/page/Mitch_Tambo> ;
+    dcterms:creator dbpedia:Mitch_Tambo ;
     dcterms:publisher <https://www.sbs.com.au> ;
-    dcterms:language austlang:D23
-.
+    dcterms:language austlang:D23 ;
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        prov:agent dbpedia:Mitch_Tambo ;
+        prov:hadRole drole:subjectAgent ;
+    ] .
 
-<https://dbpedia.org/page/Mitch_Tambo>
+dbpedia:Mitch_Tambo
     a schema:Person ;
     schema:name "Mitch Tambo" ;
     schema:email "management@mitchtambo.com"^^xsd:anyURI ;
     dcterms:type pis:indigenous
 .
 
-<https://www.sbs.com.au>
+sbs:
     a schema:Organization ;
     schema:name "SBS" ;
     schema:alternateName "Special Broadcasting Service" ;
