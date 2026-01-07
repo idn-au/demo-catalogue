@@ -44,13 +44,20 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 	      dcterms:description "University of Melbourne Art Collection of more than 18,000 works including significant collections of Australian colonial and contemporary art and including major holdings of paintings, prints and drawings, ceramics, and sculpture including Aboriginal and Torres Strait Islander Art."
         ] ;
     schema:size [
-		a schema:SizeSpecification ;
-		  schema:hasMeasurement [
-			  a QuantitativeValue ;
-			  schema:value """A 28 cm
-						    B 30.5 cm""
-						   ]
-			    ]		  
+        a schema:SizeSpecification ;
+        schema:hasMeasurement [
+            a schema:QuantitativeValue ;
+            schema:name "Stick A length"@en ;
+            schema:value "28"^^xsd:decimal ;
+            schema:unitText "cm"@en
+        ] ;
+        schema:hasMeasurement [
+            a schema:QuantitativeValue ;
+            schema:name "Stick B length"@en ;
+            schema:value "30.5"^^xsd:decimal ;
+            schema:unitText "cm"@en
+        ]
+    ] ;
 .
 
 aiatsistop:XX36665
