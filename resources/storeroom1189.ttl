@@ -21,19 +21,26 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:name "Pair of fire sticks" ;
     schema:description "Fire sticks" ; 
     schema:keywords "Indigenous objects - tools / implements" ;
-
     dcat:theme aiatsistop:XX36665 ;
     dcterms:identifier "1960.1678.000.A.000.B" ;
     schema:dateAcquired "1960"^^xsd:gYear ;
-
     dcterms:creator "Aboriginal" ;
     dcterms:publisher <https://linked.data.gov.au/org/uom> ;
-    dcat:qualifiedRelation [
-        a dcat:Relationship ;
-            dcat:hadRole poltype:policy ;
-            schema:agent <https://kurrawong.ai>
-        ] ;
+    odrl:hasPolicy [
+        a odrl:Policy , dcat:Resource ;
+          schema:additionalType poltype:policy ;
+          schema:description "University of Melbourne Aboriginal and Torres Strait Islander Cultural Heritage Policy"@en ;
+          schema:url "https://data.idnau.org/pid/MPF1289"^^xsd:anyURI ;
+        ]
     .
+
+
+_:c1336733dae3bf65fb959358338007b1 <https://schema.org/url> "https://data.idnau.org/pid/MPF1289"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+	<https://schema.org/description> "University of Melbourne Aboriginal and Torres Strait Islander Cultural Heritage Policy" ;
+	<https://schema.org/additionalType> <https://data.idnau.org/pid/vocab/policy-types/data-policy> ;
+	a <http://www.w3.org/ns/odrl/2/Policy> .
+<https://data.idnau.org/pid/resource/6849bf21-df58-4c5d-8453-c509d9fc4054> <http://www.w3.org/ns/odrl/2/hasPolicy> _:c1336733dae3bf65fb959358338007b1 ;
+	a <http://www.w3.org/ns/dcat#Resource> .
 
 
 
