@@ -1,83 +1,69 @@
-PREFIX aarr: <https://data.idnau.org/pid/vocab/aarr/>
-PREFIX aiatsistop: <https://aiatsis.gov.au/thesaurus/topical/>
-PREFIX catrole: <https://data.idnau.org/pid/vocab/cat-roles/>
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX drole:  <https://linked.data.gov.au/def/data-roles/>
-PREFIX id: <http://id.loc.gov/vocabulary/identifiers/>
-PREFIX idn-th: <https://data.idnau.org/pid/vocab/idn-th/>
-PREFIX fabio: <http://purl.org/spar/fabio/>
-PREFIX marcgt: <http://id.loc.gov/vocabulary/marcgt/>
-PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
-PREFIX orgind: <https://data.idnau.org/pid/vocab/org-indigeneity/>
-PREFIX poltype: <https://data.idnau.org/pid/vocab/policy-types/>
-PREFIX prov: <http://www.w3.org/ns/prov#>
-PREFIX schema: <https://schema.org/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX uom: <https://linked.data.gov.au/org/uom>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix aiatsistop: <https://aiatsis.gov.au/thesaurus/topical/> .
+@prefix catrole: <https://data.idnau.org/pid/vocab/cat-roles/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix idn-th: <https://data.idnau.org/pid/vocab/idn-th/> .
+@prefix marcgt: <http://id.loc.gov/vocabulary/marcgt/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix orgind: <https://data.idnau.org/pid/vocab/org-indigeneity/> .
+@prefix poltype: <https://data.idnau.org/pid/vocab/policy-types/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix uom: <https://linked.data.gov.au/org/uom> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://storeroom.its.unimelb.edu.au/umc/art?record=ecatalogue.1189>
-    a schema:CreativeWork ;
+<https://storeroom.its.unimelb.edu.au/umc/art?record=ecatalogue.1189> a schema:CreativeWork ;
+    dcterms:created ""^^xsd:date ;
+    dcterms:creator "Aboriginal" ;
+    dcterms:identifier "1960.1678.000.A.000.B" ;
+    dcterms:modified ""^^xsd:date ;
+    dcterms:publisher uom: ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcterms:created "1960-01-01"^^xsd:date ;
+            dcterms:description "University of Melbourne Art Collection of more than 18,000 works including significant collections of Australian colonial and contemporary art and including major holdings of paintings, prints and drawings, ceramics, and sculpture including Aboriginal and Torres Strait Islander Art." ;
+            dcterms:modified "1960-01-01"^^xsd:date ;
+            dcterms:title "University of Melbourne Art Collection" ;
+            dcat:accessURL "https://storeroom.its.unimelb.edu.au/umc/art?record=ecatalogue.1189"^^xsd:anyURI ;
+            dcat:theme catrole:non-home ] ;
+    dcat:theme aiatsistop:XX36665 ;
+    odrl:hasPolicy [ a dcat:Resource,
+                odrl:Policy ;
+            dcterms:created "2021-01-01"^^xsd:date ;
+            dcterms:description "University of Melbourne Aboriginal and Torres Strait Islander Cultural Heritage Policy"@en ;
+            dcterms:modified "2021-01-01"^^xsd:date ;
+            dcterms:title "University of Melbourne Aboriginal and Torres Strait Islander Cultural Heritage Policy"@en ;
+            schema:additionalType poltype:policy ;
+            schema:description "University of Melbourne Aboriginal and Torres Strait Islander Cultural Heritage Policy"@en ;
+            schema:name "University of Melbourne Aboriginal and Torres Strait Islander Cultural Heritage Policy"@en ;
+            schema:url "https://data.idnau.org/pid/MPF1289"^^xsd:anyURI ] ;
     schema:additionalType marcgt:art ;
+    schema:creditText "The Leonhard Adam Collection of International Indigenous Culture, part of the Indigenous Art and Culture Collection." ;
+    schema:dateAcquired "1960"^^xsd:gYear ;
+    schema:description "Fire sticks" ;
+    schema:keywords "Indigenous objects - tools / implements" ;
     schema:material "wood" ;
     schema:name "Pair of fire sticks" ;
-    schema:description "Fire sticks" ; 
-    schema:keywords "Indigenous objects - tools / implements" ;
-    dcat:theme aiatsistop:XX36665 ;
-    dcterms:identifier "1960.1678.000.A.000.B" ;
-    schema:dateAcquired "1960"^^xsd:gYear ;
-    dcterms:creator "Aboriginal" ;
-    dcterms:publisher uom: ;
-    schema:creditText "The Leonhard Adam Collection of International Indigenous Culture, part of the Indigenous Art and Culture Collection." ;
-    odrl:hasPolicy [
-        a odrl:Policy , dcat:Resource ;
-          schema:additionalType poltype:policy ;
-          schema:description "University of Melbourne Aboriginal and Torres Strait Islander Cultural Heritage Policy"@en ;
-          schema:url "https://data.idnau.org/pid/MPF1289"^^xsd:anyURI ;
-        ] ;
-    dcat:distribution [
-	    a dcat:Distribution ;
-          dcat:theme catrole:non-home ;
-          dcat:accessURL "https://storeroom.its.unimelb.edu.au/umc/art?record=ecatalogue.1189"^^xsd:anyURI ;
-	      dcterms:title "University of Melbourne Art Collection" ;
-	      dcterms:description "University of Melbourne Art Collection of more than 18,000 works including significant collections of Australian colonial and contemporary art and including major holdings of paintings, prints and drawings, ceramics, and sculpture including Aboriginal and Torres Strait Islander Art."
-        ] ;
-    schema:size [
-        a schema:SizeSpecification ;
-        schema:hasMeasurement [
-            a schema:QuantitativeValue ;
-            schema:name "Stick A length"@en ;
-            schema:value "28"^^xsd:decimal ;
-            schema:unitText "cm"@en
-        ] ;
-        schema:hasMeasurement [
-            a schema:QuantitativeValue ;
-            schema:name "Stick B length"@en ;
-            schema:value "30.5"^^xsd:decimal ;
-            schema:unitText "cm"@en
-        ]
-    ] ;
-.
+    schema:size [ a schema:SizeSpecification ;
+            schema:hasMeasurement [ a schema:QuantitativeValue ;
+                    schema:name "Stick A length"@en ;
+                    schema:unitText "cm"@en ;
+                    schema:value 28.0 ],
+                [ a schema:QuantitativeValue ;
+                    schema:name "Stick B length"@en ;
+                    schema:unitText "cm"@en ;
+                    schema:value 30.5 ] ] .
 
-aiatsistop:XX36665
-a skos:Concept ;
-skos:inScheme idn-th: ;
-dcterms:source "https://aiatsis.gov.au/thesaurus/topical"^^xsd:anyURI ;
-skos:prefLabel "Technology - Wood - Fire sticks"@en ;
-skos:altLabel "Fire sticks"@en ;
-skos:definition "Fire sticks"@en ;
-skos:broader <https://vocabularyserver.com/apais/xml.php?skosTema=147>
-.
+aiatsistop:XX36665 a skos:Concept ;
+    dcterms:source "https://aiatsis.gov.au/thesaurus/topical"^^xsd:anyURI ;
+    skos:altLabel "Fire sticks"@en ;
+    skos:broader <https://vocabularyserver.com/apais/xml.php?skosTema=147> ;
+    skos:definition "Fire sticks"@en ;
+    skos:inScheme idn-th: ;
+    skos:prefLabel "Technology - Wood - Fire sticks"@en .
 
-uom:
-    a schema:Organization ;
-    schema:name "University of Melboourne" ;
+uom: a schema:Organization ;
+    dcterms:type orgind:non-indigenous ;
     schema:alternateName "UoM" ;
-    schema:url "https://www.unimelb.edu.au"^^xsd:anyURI ;
-    dcterms:type orgind:non-indigenous
-.
-
-
+    schema:name "University of Melboourne" ;
+    schema:url "https://www.unimelb.edu.au"^^xsd:anyURI .
 
