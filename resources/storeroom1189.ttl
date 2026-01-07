@@ -8,6 +8,7 @@ PREFIX id: <http://id.loc.gov/vocabulary/identifiers/>
 PREFIX idn-th: <https://data.idnau.org/pid/vocab/idn-th/>
 PREFIX fabio: <http://purl.org/spar/fabio/>
 PREFIX marcgt: <http://id.loc.gov/vocabulary/marcgt/>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
 PREFIX orgind: <https://data.idnau.org/pid/vocab/org-indigeneity/>
 PREFIX poltype: <https://data.idnau.org/pid/vocab/policy-types/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
