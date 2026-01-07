@@ -64,7 +64,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 aiatsistop:XX36665
 a skos:Concept ;
 skos:inScheme idn-th: ;
-dcterms:source "https://aiatsis.gov.au/thesaurus/topical"^^anyURI ;
+dcterms:source "https://aiatsis.gov.au/thesaurus/topical"^^xsd:anyURI ;
 skos:prefLabel "Technology - Wood - Fire sticks"@en ;
 skos:altLabel "Fire sticks"@en ;
 skos:definition "Fire sticks"@en ;
