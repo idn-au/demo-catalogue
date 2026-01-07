@@ -28,6 +28,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:dateAcquired "1960"^^xsd:gYear ;
     dcterms:creator "Aboriginal" ;
     dcterms:publisher uom: ;
+    schema:creditText "The Leonhard Adam Collection of International Indigenous Culture, part of the Indigenous Art and Culture Collection." ;
     odrl:hasPolicy [
         a odrl:Policy , dcat:Resource ;
           schema:additionalType poltype:policy ;
@@ -41,8 +42,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 	      dcterms:title "University of Melbourne Art Collection" ;
 	      dcterms:description "University of Melbourne Art Collection of more than 18,000 works including significant collections of Australian colonial and contemporary art and including major holdings of paintings, prints and drawings, ceramics, and sculpture including Aboriginal and Torres Strait Islander Art."
         ] 
+    schema:size [
+		a schema:SizeSpecification ;
+		  schema:hasMeasurement [
+			  a QuantitativeValue ;
+			  schema:value """A 28 cm
+						    B 30.5 cm""
+						   ]
+			    ]		  
 .
-
 
 aiatsistop:XX36665
 a skos:Concept ;
