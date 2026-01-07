@@ -1,5 +1,6 @@
 PREFIX aarr: <https://data.idnau.org/pid/vocab/aarr/>
 PREFIX aiatsistop: <https://aiatsis.gov.au/thesaurus/topical/>
+PREFIX catrole: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX drole:  <https://linked.data.gov.au/def/data-roles/>
@@ -12,6 +13,7 @@ PREFIX poltype: <https://data.idnau.org/pid/vocab/policy-types/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX schema: <https://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX uom: <https://linked.data.gov.au/org/uom>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://storeroom.its.unimelb.edu.au/umc/art?record=ecatalogue.1189>
@@ -25,30 +27,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "1960.1678.000.A.000.B" ;
     schema:dateAcquired "1960"^^xsd:gYear ;
     dcterms:creator "Aboriginal" ;
-    dcterms:publisher <https://linked.data.gov.au/org/uom> ;
+    dcterms:publisher uom: ;
     odrl:hasPolicy [
         a odrl:Policy , dcat:Resource ;
           schema:additionalType poltype:policy ;
           schema:description "University of Melbourne Aboriginal and Torres Strait Islander Cultural Heritage Policy"@en ;
           schema:url "https://data.idnau.org/pid/MPF1289"^^xsd:anyURI ;
-        ]
-    .
-
-
-_:c1336733dae3bf65fb959358338007b1 <https://schema.org/url> "https://data.idnau.org/pid/MPF1289"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
-	<https://schema.org/description> "University of Melbourne Aboriginal and Torres Strait Islander Cultural Heritage Policy" ;
-	<https://schema.org/additionalType> <https://data.idnau.org/pid/vocab/policy-types/data-policy> ;
-	a <http://www.w3.org/ns/odrl/2/Policy> .
-<https://data.idnau.org/pid/resource/6849bf21-df58-4c5d-8453-c509d9fc4054> <http://www.w3.org/ns/odrl/2/hasPolicy> _:c1336733dae3bf65fb959358338007b1 ;
-	a <http://www.w3.org/ns/dcat#Resource> .
-
-
-
-    prov:qualifiedAttribution [
-        a prov:Attribution ;
-        prov:agent dbpedia:Mitch_Tambo ;
-        prov:hadRole drole:subjectAgent ;
-    ] .
+        ] ;
+    dcat:distribution [
+	    a dcat:Distribution ;
+          dcat:theme catrole:non-home ;
+          dcat:accessURL "https://storeroom.its.unimelb.edu.au/umc/art?record=ecatalogue.1189"^^xsd:anyURI ;
+	      dcterms:title "University of Melbourne Art Collection" ;
+	      dcterms:description "University of Melbourne Art Collection of more than 18,000 works including significant collections of Australian colonial and contemporary art and including major holdings of paintings, prints and drawings, ceramics, and sculpture including Aboriginal and Torres Strait Islander Art."
+        ] 
+.
 
 
 aiatsistop:XX36665
