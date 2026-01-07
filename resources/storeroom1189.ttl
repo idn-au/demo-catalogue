@@ -13,10 +13,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://storeroom.its.unimelb.edu.au/umc/art?record=ecatalogue.1189> a schema:CreativeWork ;
-    dcterms:created ""^^xsd:date ;
     dcterms:creator "Aboriginal" ;
     dcterms:identifier "1960.1678.000.A.000.B" ;
-    dcterms:modified ""^^xsd:date ;
+    dcterms:created  "2026-01-07"^^xsd:date ;
+    dcterms:modified "2026-01-07"^^xsd:date ;
     dcterms:publisher uom: ;
     dcat:distribution [ a dcat:Distribution ;
             dcterms:created "1960-01-01"^^xsd:date ;
