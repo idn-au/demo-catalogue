@@ -42,7 +42,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
           dcat:accessURL "https://storeroom.its.unimelb.edu.au/umc/art?record=ecatalogue.1189"^^xsd:anyURI ;
 	      dcterms:title "University of Melbourne Art Collection" ;
 	      dcterms:description "University of Melbourne Art Collection of more than 18,000 works including significant collections of Australian colonial and contemporary art and including major holdings of paintings, prints and drawings, ceramics, and sculpture including Aboriginal and Torres Strait Islander Art."
-        ] 
+        ] ;
     schema:size [
 		a schema:SizeSpecification ;
 		  schema:hasMeasurement [
