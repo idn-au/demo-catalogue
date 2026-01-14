@@ -58,7 +58,12 @@ sbs:
     schema:name "SBS" ;
     schema:alternateName "Special Broadcasting Service" ;
     schema:url "https://www.sbs.com.au"^^xsd:anyURI ;
-    dcterms:type orgind:non-indigenous
+    dcterms:type orgind:non-indigenous ;
+    dcat:qualifiedRelation [
+       a dcat:Relationship ;
+            dcat:hadRole aarr:part ;
+            schema:agent nitv:
+        ]
 .
 
 nitv:
@@ -66,5 +71,10 @@ nitv:
     schema:name "NITV" ;
     schema:alternateName "National Indigenous Television" ;
     schema:url "https://www.sbs.com.au/nitv"^^xsd:anyURI ;
-    dcterms:type orgind:indigenous
+    dcterms:type orgind:indigenous ;
+    dcat:qualifiedRelation [
+       a dcat:Relationship ;
+            dcat:hadRole aarr:partOf ;
+            schema:agent sbs:
+        ]
 .
