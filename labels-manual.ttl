@@ -77,3 +77,141 @@ PREFIX schema: <https://schema.org/>
 
 <http://viaf.org/viaf/3517148390832810830006> schema:description "Australian aboriginal leader" ;
     schema:name "RaymattjaMarika-Munungirritj"@en-AU .
+
+<https://linked.data.gov.au/def/atns/model/Agreement>
+    schema:description "An ATNS entity classified with the ATNS entity category Agreement."@en ;
+    schema:name "Agreement"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/EntityRelationship>
+    schema:description "A preserved source row connecting two ATNS entities and, where supplied, an ATNS relationship type."@en ;
+    schema:name "Agreements, Treaties and Negotiated Settlements Entity Relationship"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/Reference>
+    schema:description "A bibliographic, web or documentary reference preserved from the ATNS Refs table."@en ;
+    schema:name "Agreements, Treaties and Negotiated Settlements Reference"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/cat/13e77fec-44fd-554f-a075-ec60788eb1b1>
+    schema:description "The ATNS entity category 'Agreement'."@en ;
+    schema:name "Agreement"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/cat/1dad59ae-4020-598a-b5df-d9e0eae7f9c6>
+    schema:description "The ATNS entity category 'Organisation'."@en ;
+    schema:name "Organisation"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/country/244f6961-729f-5b21-8fc9-baff9dd9af7e>
+    schema:description "The ATNS country value 'Australia'."@en ;
+    schema:name "Australia"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/ref/5f376307-9421-5ed8-aad9-7d12cb7b7fb6>
+    schema:description "An ATNS reference classified as a resource."@en ;
+    schema:name "Resource"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/rel/5e471add-777af47-0ac36ed39889a7b>
+    schema:description "The ATNS relationship type 'Later known as'."@en ;
+    schema:name "Later known as"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/rel/a00a860d-f0b0cea-6aacab6d119903c>
+    schema:description "The ATNS relationship type 'Signatory'."@en ;
+    schema:name "Signatory"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/rel/b720e661-d4f1afa-9a26c26936c3b49>
+    schema:description "The ATNS relationship type 'Related'."@en ;
+    schema:name "Related"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/sub/5996de0c-8cc6-5f14-8901-d839af36a4d4>
+    schema:name "Collaboration / Partnership"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/sub/6a8815da-e29d-506f-85fd-c64c8807fea2>
+    schema:name "Education"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/sub/9335b2f1-4915-55cc-9736-2ded7c4a2008>
+    schema:name "Access"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/sub/c74e76ef-701f-5784-8223-5fcd87a7641c>
+    schema:name "Native Title"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/sub/d15dd1de-4696-50c8-9f10-2e95eea88e6f>
+    schema:name "Health and Community Services"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/sub/ffe61b3b-8b29-5264-89ac-758a03928ea5>
+    schema:name "Housing, Construction and Infrastructure"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/subcat/09f0a068-ce65-5c11-8dec-f081d1a81ec2>
+    schema:name "Indigenous Land Use Agreement (ILUA) (Native Title Act)"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/subcat/6ffe90c2-95c9-51b5-a083-8c7d83b975ef>
+    schema:name "Framework Agreement"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/subcat/f0427812-61d1-5004-b577-ac236a9c5c18>
+    schema:name "Funding Agreement"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/category>
+    schema:name "ATNS Entity Category"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/country>
+    schema:name "ATNS Country Classification"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/deleted>
+    schema:name "Deleted Status Flag"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/eid>
+    schema:name "ATNS Entity Identifier"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/objectEntity>
+    schema:name "Object Entity"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/referenceType>
+    schema:name "ATNS Reference Type"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/relationshipType>
+    schema:name "Relationship Type"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/sourceEntityId>
+    schema:name "Source Entity Identifier"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/sourceReferenceId>
+    schema:name "Source Reference Identifier"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/sourceRelationshipId>
+    schema:name "Source Entity Relationship Identifier"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/subcategory>
+    schema:name "ATNS Entity Subcategory"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/subjectEntity>
+    schema:name "Subject Entity"@en ;
+.
+
+<https://linked.data.gov.au/def/atns/model/subjectMatter>
+    schema:name "ATNS Subject Matter"@en ;
+.
