@@ -1,3 +1,4 @@
+PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX mrr: <https://prez.dev/ManifestResourceRoles/>
 PREFIX prez: <https://prez.dev/>
@@ -18,6 +19,11 @@ PREFIX schema: <https://schema.org/>
             prof:hasRole mrr:ResourceData ;
             schema:description "sdo:CreativeWork objects in RDF (Turtle) files in the resources/ folder" ;
             schema:name "Resource Data" ;
+            schema:additionalType
+                schema:ScholarlyArticle ,
+                atns:Agreement ,
+                atns:Reference ,
+                atns:EntityRelationship ;
             # dcterms:conformsTo <https://data.idnau.org/pid/cp> ;
         ] ,
         [
