@@ -78,6 +78,11 @@ PREFIX schema: <https://schema.org/>
 <http://viaf.org/viaf/3517148390832810830006> schema:description "Australian aboriginal leader" ;
     schema:name "RaymattjaMarika-Munungirritj"@en-AU .
 
+<https://linked.data.gov.au/def/atns/model/Entity>
+    schema:description "A preserved record from the ATNS Entities table."@en ;
+    schema:name "Agreements, Treaties and Negotiated Settlements Entity"@en ;
+.
+
 <https://linked.data.gov.au/def/atns/model/Agreement>
     schema:description "An ATNS entity classified with the ATNS entity category Agreement."@en ;
     schema:name "Agreement"@en ;
