@@ -21,8 +21,6 @@ PREFIX schema: <https://schema.org/>
             schema:name "Resource Data" ;
             schema:additionalType
                 schema:ScholarlyArticle ,
-                schema:Organization ,
-                atns:Entity ,
                 atns:Agreement ,
                 atns:Reference ,
                 atns:EntityRelationship ;
