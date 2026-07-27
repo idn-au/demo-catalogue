@@ -23,7 +23,6 @@ PREFIX schema: <https://schema.org/>
                 schema:ScholarlyArticle ,
                 schema:Organization ,
                 atns:Entity ,
-                atns:Agreement ,
                 atns:Reference ,
                 atns:EntityRelationship ;
             # dcterms:conformsTo <https://data.idnau.org/pid/cp> ;
