@@ -80,17 +80,17 @@ PREFIX schema: <https://schema.org/>
 
 <https://linked.data.gov.au/def/atns/model/Entity>
     schema:description "A preserved record from the ATNS Entities table, classified with an ATNS category concept."@en ;
-    schema:name "Agreements, Treaties and Negotiated Settlements Entity Record"@en ;
+    schema:name "ATNS Entity Record"@en ;
 .
 
 <https://linked.data.gov.au/def/atns/model/EntityRelationship>
     schema:description "A preserved source row connecting two ATNS entities and, where supplied, an ATNS relationship type."@en ;
-    schema:name "Agreements, Treaties and Negotiated Settlements Entity Relationship"@en ;
+    schema:name "ATNS Entity Relationship"@en ;
 .
 
 <https://linked.data.gov.au/def/atns/model/Reference>
     schema:description "A bibliographic, web or documentary reference preserved from the ATNS Refs table."@en ;
-    schema:name "Agreements, Treaties and Negotiated Settlements Reference"@en ;
+    schema:name "ATNS Reference"@en ;
 .
 
 <https://data.idnau.org/pid/atns-cat/13e77fec-44fd-554f-a075-ec60788eb1b1>
