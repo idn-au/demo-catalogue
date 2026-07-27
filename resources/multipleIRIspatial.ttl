@@ -6,7 +6,7 @@
 @prefix geo:      <http://www.opengis.net/ont/geosparql#> .
 @prefix ex:       <https://example.org/catalog/> .
 @prefix gn:       <https://sws.geonames.org/> .
-@prefix vcard:    <http://www.w3.org/2006/vcard/ns#>
+@prefix vcard:    <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
 
 ex:dataset-coastal-biodiversity
