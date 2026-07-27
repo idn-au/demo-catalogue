@@ -4,7 +4,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://doi.org/10.1080/0811114042000269281>
     a schema:ScholarlyArticle , schema:CreativeWork ;
     schema:description "Examines the rationale and practice of transferring public housing stock from state housing authorities to community housing associations in Victoria, New South Wales and Tasmania, within the policy and funding context of the 2003–2008 Commonwealth State Housing Agreement."@en ;
-    schema:citation <https://data.idnau.org/pid/resource/atns/entity/7c1def57-546e-5389-bde5-24d566944930> ;
+    schema:citation <https://data.idnau.org/pid/resource/7c1def57-546e-5389-bde5-24d566944930> ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     schema:creator
         "Darcy, Michael" ,
