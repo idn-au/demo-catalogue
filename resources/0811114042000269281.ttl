@@ -1,7 +1,8 @@
+PREFIX id: <http://id.loc.gov/vocabulary/identifiers/>
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://doi.org/10.1080/0811114042000269281>
+<https://data.idnau.org/pid/resource/f73b42cf-d39b-406c-a8c5-10a01ae0594e>
     a schema:ScholarlyArticle , schema:CreativeWork ;
     schema:description "Examines the rationale and practice of transferring public housing stock from state housing authorities to community housing associations in Victoria, New South Wales and Tasmania, within the policy and funding context of the 2003–2008 Commonwealth State Housing Agreement."@en ;
     schema:citation <https://data.idnau.org/pid/resource/7c1def57-546e-5389-bde5-24d566944930> ;
@@ -11,6 +12,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "Jacobs, Keith" ,
         "Marston, Greg" ;
     schema:datePublished "2004"^^xsd:gYear ;
+    schema:identifier "https://doi.org/10.1080/0811114042000269281"^^id:doi ;
     schema:isPartOf
         [
             a schema:Periodical ;
