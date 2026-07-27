@@ -1,4 +1,5 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
 PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
 PREFIX atns-entity: <https://data.idnau.org/pid/resource/atns/entity/>
@@ -15,7 +16,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 atns-refdata:180b6fcc-dcc6-5592-a390-5179366066fd
-    a atns:Reference ;
+    a atns:Reference, dcat:Resource ;
     atns:deleted false ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:referenceType atns-ref:5f376307-9421-5ed8-aad9-7d12cb7b7fb6 ;
