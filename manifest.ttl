@@ -40,10 +40,29 @@ PREFIX schema: <https://schema.org/>
             schema:name "Dataset Resource Data" ;
         ] ,
         [
-            prof:hasArtifact "resources/*atns-[0-9]*.ttl" ;
+            prof:hasArtifact
+                "resources/atns-24.ttl" ,
+                "resources/atns-27.ttl" ,
+                "resources/atns-30.ttl" ,
+                "resources/atns-37.ttl" ,
+                "resources/atns-1624.ttl" ;
+            prof:hasRole mrr:ResourceData ;
+            schema:additionalType atns:AgreementRecord ;
+            schema:description "ATNS Agreement-category entity resource data in RDF (Turtle) files" ;
+            schema:name "ATNS Agreement Record Resource Data" ;
+        ] ,
+        [
+            prof:hasArtifact
+                "resources/atns-384.ttl" ,
+                "resources/atns-617.ttl" ,
+                "resources/atns-618.ttl" ,
+                "resources/atns-753.ttl" ,
+                "resources/atns-760.ttl" ,
+                "resources/atns-1845.ttl" ,
+                "resources/atns-3160.ttl" ;
             prof:hasRole mrr:ResourceData ;
             schema:additionalType atns:Entity ;
-            schema:description "ATNS entity resource data in RDF (Turtle) files" ;
+            schema:description "Other ATNS entity resource data in RDF (Turtle) files" ;
             schema:name "ATNS Entity Resource Data" ;
         ] ,
         [

@@ -83,6 +83,11 @@ PREFIX schema: <https://schema.org/>
     schema:name "ATNS Entity Record"@en ;
 .
 
+<https://linked.data.gov.au/def/atns/model/AgreementRecord>
+    schema:description "A preserved record classified as an Agreement in the ATNS Entities table."@en ;
+    schema:name "ATNS Agreement Record"@en ;
+.
+
 <https://linked.data.gov.au/def/atns/model/EntityRelationship>
     schema:description "A preserved source row connecting two ATNS entities and, where supplied, an ATNS relationship type."@en ;
     schema:name "ATNS Entity Relationship"@en ;
