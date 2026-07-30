@@ -8,7 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:codeRepository "https://github.com/idn-au/demo-catalogue" ;
     schema:creator <https://linked.data.gov.au/org/isu> ;
     schema:dateCreated "2025-09-23"^^xsd:date ;
-    schema:dateModified "2026-07-29"^^xsd:date ;
+    schema:dateModified "2026-07-30"^^xsd:date ;
     schema:description "A catalogue for demonstrating metadata techniques for the Indigenous Data Network" ;
     schema:hasPart
         <https://doi.org/10.1080/24750158.2024.2411643> ,
@@ -18,6 +18,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <https://data.idnau.org/pid/resource/7c1def57-546e-5389-bde5-24d566944930> ,
         <https://data.idnau.org/pid/resource/c8122728-6e9f-597c-b4d9-68b8858e66c7> ,
         <https://data.idnau.org/pid/resource/dd9b004b-1c22-5b53-8381-bd93760ee922> ,
+        <https://data.idnau.org/pid/policy/telstra-ngaanyatjarra-ilua> ,
         <https://data.idnau.org/pid/resource/0cca8502-926a-5770-88a4-de3ae0d9c4e9> ,
         <https://data.idnau.org/pid/resource/180b6fcc-dcc6-5592-a390-5179366066fd> ,
         <https://data.idnau.org/pid/resource/97dd3be9-f4ca-586a-971a-594015bbfcc4> ,
