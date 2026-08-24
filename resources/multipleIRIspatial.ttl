@@ -1,27 +1,35 @@
 # this Dataset has two IRIs for dcterms:spatial and can be used to test downstream impacts for rendering spatial features. ref: https://github.com/idn-au/idn-catalogue-profile/issues/22
 
-@prefix dcat:     <http://www.w3.org/ns/dcat#> .
-@prefix dcterms:  <http://purl.org/dc/terms/> .
-@prefix schema:   <https://schema.org/> .
-@prefix geo:      <http://www.opengis.net/ont/geosparql#> .
-@prefix ex:       <https://example.org/catalog/> .
-@prefix gn:       <https://sws.geonames.org/> .
-@prefix vcard:    <http://www.w3.org/2006/vcard/ns#> .
-@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX ex: <https://example.org/catalog/>
+PREFIX gn: <https://sws.geonames.org/>
+PREFIX schema: <https://schema.org/>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 ex:dataset-coastal-biodiversity
-    a dcat:Dataset ;
-    dcterms:title "Coastal biodiversity surveys of Port Phillip Bay and Western Port"@en ;
-    dcterms:description "Survey data collected from two distinct Victorian coastal regions between 2019 and 2022."@en ;
-    dcterms:spatial  gn:2158177 ,  gn:2058695 ;   # Port Phillip Bay & Western Port (example IRIs)
-    dcterms:creator  <https://ror.org/03yrm5c26> ; # University of Melbourne (example)
-    dcterms:publisher <https://ror.org/03yrm5c26> ;
-    dcterms:issued "2022-07-15"^^xsd:date ;
-    dcterms:created "2025-10-08"^^xsd:date ;
-    dcterms:modified "2025-10-08"^^xsd:date ;
-    dcat:keyword "biodiversity", "coastal ecosystem", "Victoria" ;
-    dcat:theme <http://vocab.australia.gov.au/def/anzsrc-for/0602> ;
-    dcat:contactPoint [ a vcard:Individual ;
-        vcard:fn "Dr. J. Smith" ;
-        vcard:hasEmail <mailto:j.smith@example.org> ] ;
-    dcat:landingPage <https://example.org/data/coastal-biodiversity> .
+    a schema:Dataset ;
+    dcat:contactPoint
+        [
+            a vcard:Individual ;
+            vcard:fn "Dr. J. Smith" ;
+            vcard:hasEmail <mailto:j.smith@example.org> ;
+        ] ;
+    dcat:landingPage <https://example.org/data/coastal-biodiversity> ;
+    schema:creator <https://ror.org/03yrm5c26> ;
+    schema:dateCreated "2025-10-08"^^xsd:date ;
+    schema:dateIssued "2022-07-15"^^xsd:date ;
+    schema:dateModified "2025-10-08"^^xsd:date ;
+    schema:description "Survey data collected from two distinct Victorian coastal regions between 2019 and 2022."@en ;
+    schema:keywords
+        <http://vocab.australia.gov.au/def/anzsrc-for/0602> ,
+        "Victoria" ,
+        "biodiversity" ,
+        "coastal ecosystem" ,
+        "Demo" ;
+    schema:name "Coastal biodiversity surveys of Port Phillip Bay and Western Port"@en ;
+    schema:publisher <https://ror.org/03yrm5c26> ;
+    schema:spatialCoverage
+        gn:2058695 ,
+        gn:2158177 ;
+.
