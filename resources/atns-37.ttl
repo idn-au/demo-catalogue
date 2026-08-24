@@ -26,6 +26,7 @@ idn-resource:7c1def57-546e-5389-bde5-24d566944930
         atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18 ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     schema:description "Public ATNS summary describes a Commonwealth, State and Territory housing agreement authorised under the Housing Assistance Act 1996 (Cth)."@en ;
+    schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
     schema:keywords
         atns-sub:d15dd1de-4696-50c8-9f10-2e95eea88e6f ,
         atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ,
