@@ -3,7 +3,6 @@ PREFIX catrole: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX idn-th: <https://data.idnau.org/pid/vocab/idn-th/>
-PREFIX marcgt: <http://id.loc.gov/vocabulary/marcgt/>
 PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
 PREFIX orgind: <https://data.idnau.org/pid/vocab/org-indigeneity/>
 PREFIX poltype: <https://data.idnau.org/pid/vocab/policy-types/>
@@ -26,7 +25,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             schema:name "University of Melbourne Aboriginal and Torres Strait Islander Cultural Heritage Policy"@en ;
             schema:url "https://data.idnau.org/pid/MPF1289"^^xsd:anyURI ;
         ] ;
-    schema:additionalType marcgt:art ;
+    schema:additionalType schema:VisualArtwork ;
     schema:creator "Aboriginal" ;
     schema:creditText "The Leonhard Adam Collection of International Indigenous Culture, part of the Indigenous Art and Culture Collection." ;
     schema:dateAcquired "1960"^^xsd:gYear ;
@@ -35,10 +34,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:description "Fire sticks" ;
     schema:distribution
         [
-            a
-                dcat:Distribution ,
-                schema:DataDownload ;
-            dcat:accessURL "https://storeroom.its.unimelb.edu.au/umc/art?record=ecatalogue.1189"^^xsd:anyURI ;
+            a schema:DataDownload ;
+            schema:url "https://storeroom.its.unimelb.edu.au/umc/art?record=ecatalogue.1189"^^xsd:anyURI ;
             schema:dateCreated "1960-01-01"^^xsd:date ;
             schema:dateModified "1960-01-01"^^xsd:date ;
             schema:description "University of Melbourne Art Collection of more than 18,000 works including significant collections of Australian colonial and contemporary art and including major holdings of paintings, prints and drawings, ceramics, and sculpture including Aboriginal and Torres Strait Islander Art." ;
