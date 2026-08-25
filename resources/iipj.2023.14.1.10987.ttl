@@ -13,6 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://doi.org/10.18584/iipj.2023.14.1.10987>
     a schema:CreativeWork ;
+    schema:additionalType schema:ScholarlyArticle ;
     schema:creator <https://orcid.org/0000-0002-1398-7524> ;
     schema:dateCreated "2023"^^xsd:gYear ;
     schema:description "Australia's distinctive colonial administrative history has resulted in the generation and capture of large quantities of personal data about Indigenous Peoples in Australia, which is currently controlled and processed by government agencies and departments without coherent regulation. From an Indigenous standpoint, these data constitute stranded assets. Established legal frameworks for pursuing recovery of other classes of asset alienated by governments from Indigenous Peoples in Australia, including land, natural resources, and unpaid wages, have not yet been extended to the recovery of Indigenous data assets. This legacy scenario has created a disproportionate administrative burden for Indigenous organisations by sustaining their dependency on government for necessary data, while simultaneously suppressing the value of their own contemporary community-owned data assets. In this article, we outline leading international legal, economic, and scientific frameworks by which an equitable arrangement for the governance of Indigenous data might be restored to Indigenous Peoples in Australia." ;
