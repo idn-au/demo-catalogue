@@ -3,6 +3,7 @@ PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
 PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
 PREFIX atns-sub: <https://linked.data.gov.au/def/atns/sub/>
 PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
+PREFIX cat-obj-types: <https://data.idnau.org/pid/vocab/cat-obj-types/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
 PREFIX schema: <https://schema.org/>
@@ -10,9 +11,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 idn-resource:7c1def57-546e-5389-bde5-24d566944930
     a
-        atns:AgreementRecord ,
         atns:Entity ,
         schema:CreativeWork ;
+    schema:additionalType cat-obj-types:Agreement ;
     dcterms:references
         idn-resource:0cca8502-926a-5770-88a4-de3ae0d9c4e9 ,
         idn-resource:180b6fcc-dcc6-5592-a390-5179366066fd ;
