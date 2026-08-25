@@ -33,6 +33,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:type pis:indigenous ;
     schema:description "Raymattja Marika AM, (c.1959 - 11 May 2008) also known as Gunutjpitt Gunuwanga, was a Yolngu leader, scholar, educator, translator, linguist and cultural advocate for Aboriginal Australians. She was a Director of Reconciliation Australia and a member of the Australian Institute of Aboriginal and Torres Strait Islander Studies. She was also a director of the Yothu Yindi Foundation and a participant in the 2020 Summit, which was held in April 2008. Marika advocated understanding and reconciliation between Indigenous Australian and Western cultures." ;
     schema:identifier "http://viaf.org/viaf/3517148390832810830006"^^id:viaf ;
+    schema:name "Raymattja Marika" ;
 .
 
 <https://www.austlit.edu.au/austlit/page/A128141>
