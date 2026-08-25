@@ -1,6 +1,5 @@
-
+PREFIX cat-obj-types: <https://data.idnau.org/pid/vocab/cat-obj-types/>
 PREFIX drole: <https://linked.data.gov.au/def/data-roles/>
-PREFIX fabio: <http://purl.org/spar/fabio/>
 PREFIX orgrol: <https://data.idnau.org/pid/orgRole/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -26,7 +25,7 @@ schema:OrganizationRole
             prov:hadRole drole:custodian ;
             schema:agent orgrol:bc9c0054-7929-4b61-9c72-b4b9613b7ede ;
         ] ;
-    schema:additionalType fabio:PolicyDocument ;
+    schema:additionalType cat-obj-types:Policy ;
     schema:description "The objective of this policy is to articulate how the University accepts, cares for and manages human remains and burial artefacts."@en ;
     schema:identifier "MPF1226" ;
     schema:keywords "Demo" ;
