@@ -12,8 +12,8 @@ idn-resource:c8122728-6e9f-597c-b4d9-68b8858e66c7
         schema:CreativeWork ;
     schema:additionalType cat-obj-types:Agreement ;
     atns:category atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ;
-    atns:deleted false ;
-    atns:sourceEntityId 1624 ;
+    atns:deleted "false"^^xsd:boolean ;
+    atns:sourceEntityId "1624" ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
     schema:keywords
