@@ -16,8 +16,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://www.youtube.com/watch?v=tEdweyPh-N8>
     a
-        schema:CreativeWork ,
-        schema:VideoObject ;
+        schema:CreativeWork ;
+    schema:additionalType schema:VideoObject ;
     dcterms:contributor nitv: ;
     prov:qualifiedAttribution
         [
