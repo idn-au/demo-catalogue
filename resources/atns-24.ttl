@@ -4,6 +4,7 @@ PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
 PREFIX atns-sub: <https://linked.data.gov.au/def/atns/sub/>
 PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
 PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
+PREFIX cat-obj-types: <https://data.idnau.org/pid/vocab/cat-obj-types/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
 PREFIX schema: <https://schema.org/>
