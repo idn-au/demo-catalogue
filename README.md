@@ -1,5 +1,7 @@
 # IDN Demonstration Catalogue
 
+> [!IMPORTANT]
+> Resources in this catalogue are now maintained in the IDN's [Indigenous Data Catalogue](https://github.com/idn-au/indigenous-data-catalogue) in the [`demo/`](https://github.com/idn-au/indigenous-data-catalogue/tree/main/resources/demo) folder.
 
 ## Catalogue Resources
 
